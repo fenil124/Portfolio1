@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="Portfolio.png" />
+    <meta name="theme-color" content="#2196f3" />
+    <title>Web Application</title>
+    <link rel="stylesheet" href="style.css" />
+    
+</head>
+
+<body>
+    <div id="progressBar"></div>
+
+    <header class="navbar">
+        <div class="logo"><img src="F.png" alt="logo" /></div>
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="assets/resume.pdf" download class="download">Resume</a>
+        </nav>
+        <button class="dark-mode-toggle" onclick="toggleDarkMode()">🌙</button>
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <main class="content">
+        <h1 class="slide-in">My Projects</h1>
+        <div class="project-grid">
+            <div class="project-card fade-in">
+                <h3>Portfolio Website</h3>
+                <p>A modern responsive portfolio with animations, transitions, and custom CSS/JS.</p>
+            </div>
+            <div class="project-card fade-in">
+                <h3>Currency Converter</h3>
+                <p>A clean currency converter built with vanilla JavaScript and local exchange API.</p>
+            </div>
+            <div class="project-card fade-in">
+                <h3>Game UI</h3>
+                <p>A fun puzzle game UI using grid layout, JS logic, and responsive design.</p>
+            </div>
+            <div class="project-card fade-in">
+                <h3>Web Application</h3>
+                <p>A Web Application for Shopping using HTML,CSS and JavaScript. </p>
+            </div>
+        </div>
+    </main>
+
+    <button class="scroll-top" onclick="scrollToTop()">↑</button>
+    <script src="script.js"></script>
+</body>
+
+</html>
